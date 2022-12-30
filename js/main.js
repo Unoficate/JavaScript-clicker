@@ -44,7 +44,7 @@ function CCC(){
 		else if ((count >= 0) && (count < 1000)){
 			count += point;
 			const template = '<div class="score" id="scoreBar">%score%</div>';
-			const template2 = template.replace('%score%', count);
+			const template2 = template.replace('%score%', count + '💲');
 			score.innerHTML = template2;
 		}
 		else if (count >= 1000000){
