@@ -131,7 +131,7 @@ function Cut(){
 	const tem2 = tem.replace('%bonus%', 'Ваш бонус +' + (Math.round(cut) + put) + '💲за клик');
 	bonus.innerHTML = tem2;
 	const tema = '<span id="bonus">%bonus%</span>';
-	const tema2 = tem.replace('%bonus%', 'Пассивный доход +' + point + '/сек');
+	const tema2 = tem.replace('%bonus%', 'Пассивный доход +' + point + '💲/сек');
 	bonus2.innerHTML = tema2;
 
 }
