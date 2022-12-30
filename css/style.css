@@ -31,17 +31,18 @@ body, html{
 	padding: 20px;
 	background: pink;
 	display: grid;
-	grid-gap: 10px;
-	grid-template-columns: 1fr 1fr;
+	grid-gap: 30px;
+	grid-template-columns: 2fr 1fr 1fr;
 	grid-template-areas: 
-	'bonus bonus' 
-	'modal magaz';
+	'bonus bonus stili'
+	'bonus2 bonus2 stili' 
+	'modal magaz stili'
+	'modal magaz2 stili';
 }
 .modal{
 	display: flex;
 	flex-direction: column;
 	border: 2px solid hotpink;
-	height: 500px;
 	width: 500px;
 	box-shadow: 20px 17px 0px #2c5866;
 	align-items: center;
@@ -51,7 +52,7 @@ body, html{
 	border-radius: 12px;
 	grid-area: modal;
 }
-#shop1, #shop2, #shop3, #shop4, #shop5, #shop6{
+#shop1, #shop2, #shop3, #shop4, #shop5, #shop6, #pass1{
 	border: 2px solid pink;
 	border-radius: 12px;
 	text-align: center;	
@@ -63,12 +64,11 @@ body, html{
 	text-shadow: 0 0 10px hotpink;
 }
 .magaz{
+	padding: 5px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	height: 300px;
-	width: 200px;
 	float: right;
 	grid-area: magaz;
 	border: 2px solid lightblue;
@@ -76,8 +76,21 @@ body, html{
 	border-radius: 12px;
 	box-shadow: 20px 17px 0px #b05562;
 }
-#shop1:hover, #shop2:hover, #shop3:hover, #shop4:hover, #shop5:hover, #shop6:hover{
-	border: 2px solid blue;
+.magaz2{
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	float: right;
+	grid-area: magaz2;
+	border: 2px solid lightblue;
+	background: hotpink;
+	border-radius: 12px;
+	box-shadow: 20px 17px 0px #b05562;
+}
+#shop1:hover, #shop2:hover, #shop3:hover, #shop4:hover, #shop5:hover, #shop6:hover, #pass1:hover{
+	border: 2px solid gold;
 }
 #bonus{
 	font-family: cursive;
@@ -85,6 +98,13 @@ body, html{
 	color: white;
 	grid-area: bonus;
 	text-shadow: 0 0 10px lightblue;
+}
+#bonus2{
+	font-family: cursive;
+	font-size: 50px;
+	color: white;
+	grid-area: bonus2;
+	text-shadow: 0 0 10px lightblue;	
 }
 #scoreBar{
 	font-size: 50px;
@@ -99,3 +119,68 @@ body, html{
 	text-shadow: 0 0 10px pink;
 	margin-bottom: 5px;
 }	
+.stili{
+	display: flex;
+	padding: 10px;
+	justify-content: center;
+	flex-direction: column;
+	float: right;
+	grid-area: magaz;
+	border: 2px solid lightblue;
+	background: hotpink;
+	border-radius: 12px;
+	box-shadow: 20px 17px 0px #b05562;
+	grid-area: stili;
+}
+.stil1, .stil2, .stil3, .stil4, .stil5, .stil6{
+	border: 2px solid pink;
+	border-radius: 12px;
+	text-align: center;	
+	font-family: cursive;
+	background: pink;
+	margin-top: 5px;
+	color: white;
+	cursor: pointer;
+	text-shadow: 0 0 10px hotpink;	
+}
+.stil1:hover, .stil2:hover, .stil3:hover, .stil4:hover, .stil5:hover, .stil6:hover{
+	background: orange;
+	border: 2px solid gold;
+}
+#title1{
+	font-family: cursive;
+	font-size: 25px;
+	color: white;
+	text-shadow: 0 0 25px gold;
+	margin-bottom: 5px;
+}	
+#achivka1, #achivka2, #achivka3, #achivka4, #achivka5, #achivka6 {
+	text-align: left;
+	font-size: 15px;
+	font-family: cursive;
+	margin-bottom: 2px;
+	color: white;
+	text-shadow: 0 0 20px gold;
+}
+#colect, #colect2, #colect3, #colect4, #colect5, #colect6 {
+	text-align: left;
+	margin-bottom: 5px;
+	color: gold;
+	text-shadow: 0 0 20px orange;
+	font-size: 15px;
+	font-family: cursive;
+}
+#shop7{
+	border: 2px solid gold;
+	border-radius: 12px;
+	text-align: center;	
+	font-family: cursive;
+	background: gold;
+	margin-top: 5px;
+	color: white;
+	cursor: pointer;
+	text-shadow: 0 0 10px hotpink;
+}
+#shop7:hover{
+	border: 2px solid orange;
+}
