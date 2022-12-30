@@ -181,10 +181,21 @@ body, html{
 	cursor: pointer;
 	text-shadow: 0 0 10px hotpink;
 }
+#pass2{
+	border: 2px solid gold;
+	border-radius: 12px;
+	text-align: center;	
+	font-family: cursive;
+	background: gold;
+	margin-top: 5px;
+	color: white;
+	cursor: pointer;
+	text-shadow: 0 0 10px hotpink;
+}
 #shop7:hover{
 	border: 2px solid orange;
 }
-#grid1, #grid2, #grid3, #grid4, #grid5, #grid6{
+#grid1, #grid2, #grid3, #grid4, #grid5, #grid6, #grid7{
 	border: 2px solid lightblue;
 	border-radius: 12px;
 	text-align: center;	
