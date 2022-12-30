@@ -1,4 +1,4 @@
-let count = 660;
+let count = 0;
 let cut = 1;
 let put = 0;
 let all = 0;
