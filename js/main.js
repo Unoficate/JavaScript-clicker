@@ -218,8 +218,6 @@ function Shop7(){
 		put += Math.round(all);
 		count = 0;
 		count += Math.round(al1);
-		CCC();
-		Cut();
 	}	
 		else if((count >= store2) && (count < store3)) {
 			all = count / store2 * 5;
@@ -231,8 +229,6 @@ function Shop7(){
 			put += Math.round(all);
 			count = 0;
 			count += Math.round(al2);
-			CCC();
-			Cut();	
 		}
 		else if((count >= store3) && (count < store4)) {
 			all = count / store3 * 12;
@@ -244,8 +240,6 @@ function Shop7(){
 			put += Math.round(all);
 			count = 0;
 			count += Math.round(al3);
-			CCC();
-			Cut();		
 		}
 		else if((count >= store4) && (count < store5)) {
 			all = count / store4 * 20;
@@ -257,8 +251,6 @@ function Shop7(){
 			put += Math.round(all);
 			count = 0;
 			count += Math.round(al4);
-			CCC();
-			Cut();	
 		}
 		else if((count >= store5) && (count < store6)) {
 			all = count / store5 * 32;
@@ -270,8 +262,6 @@ function Shop7(){
 			put += Math.round(all);
 			count = 0;
 			count += Math.round(al5);
-			CCC();
-			Cut();
 		}
 		else if(count > store6){
 			all = count / store6 * 55;
@@ -282,10 +272,10 @@ function Shop7(){
 			ss6.innerHTML = tema2;
 			put += Math.round(all);
 			count = 0;
-			count += Math.round(al6);
-			CCC();
-			Cut()		
+			count += Math.round(al6);		
 		}
+	CCC()
+	Cut()	
 }	
 function stil1(){
 	if (count >= 100){
