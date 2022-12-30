@@ -348,7 +348,9 @@ function pass1(){
 function pass2(){
 	if (count >= 500){
 		all2 = count / 500;
+		let al11 = count % 500;
 		count = 0;
+		count += Math.round(al11);
 		point += Math.round(all2);
 		CCC();
 		Cut();
