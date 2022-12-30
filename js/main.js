@@ -1,8 +1,9 @@
-let count = 1500;
+let count = 0;
 let cut = 1;
 let put = 0;
 let all = 0;
 let all2 = 0;
+let all3 = 0;
 let store1 = 150;
 let store2 = 600;
 let store3 = 1200;
@@ -33,11 +34,27 @@ const stil14 = document.querySelector('#colect5');
 const stil15 = document.querySelector('#colect6');
 bonus.innerHTML = count;
 function CCC(){
-	count += point;
-	const template = '<div class="score" id="scoreBar">%score%</div>';
-	const template2 = template.replace('%score%', count + '💲');
-	score.innerHTML = template2;
-}
+	if ((count >= 1000) && (count < 1000000)){
+		count += point;
+		all3 = count / 1000
+		const template = '<div class="score" id="scoreBar">%score%</div>';
+		const template2 = template.replace('%score%', all3.toFixed(2) + 'k💲');
+		score.innerHTML = template2;
+	}	
+		else if ((count >= 0) && (count < 1000)){
+			count += point;
+			const template = '<div class="score" id="scoreBar">%score%</div>';
+			const template2 = template.replace('%score%', count);
+			score.innerHTML = template2;
+		}
+		else if (count >= 1000000){
+			count += point;
+			all3 = count / 1000000			
+			const template = '<div class="score" id="scoreBar">%score%</div>';
+			const template2 = template.replace('%score%', all3.toFixed(2) + 'kk💲');
+			score.innerHTML = template2;
+		}	
+}			
 setInterval(CCC, 1000);
 function Clicker1(){
 	CCC();
