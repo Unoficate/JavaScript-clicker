@@ -1,4 +1,4 @@
-let count = 0;
+let count = 660;
 let cut = 1;
 let put = 0;
 let all = 0;
@@ -208,49 +208,84 @@ function Shop6(){
 	}
 }	
 function Shop7(){
-	if ((count >= 150) && (count < 600)) {
-		all = count / 150;
+	if ((count >= store1) && (count < store2)) {
+		all = count / store1 * 1;
+		let al1 = count % store1;
+		store1 *= 1.1; 
+		const tema = '<span id="grid2">%money%</span>';
+		const tema2 = tema.replace('%money%', Math.round(store1) + '💲');
+		ss1.innerHTML = tema2;
 		put += Math.round(all);
 		count = 0;
+		count += al1;
 		CCC();
 		Cut();
 	}	
-		else if((count >= 600) && (count < 1200)) {
-			all = count / 120;
+		else if((count >= store2) && (count < store3)) {
+			all = count / store2 * 5;
+			let al2 = count % store2;
+			store2 *= 1.1; 
+			const tema = '<span id="grid2">%money%</span>';
+			const tema2 = tema.replace('%money%', Math.round(store2) + '💲');
+			ss2.innerHTML = tema2;
 			put += Math.round(all);
 			count = 0;
+			count += al2;
 			CCC();
 			Cut();	
 		}
-		else if((count >= 1200) && (count < 2000)) {
-			all = count / 100;
+		else if((count >= store3) && (count < store4)) {
+			all = count / store3 * 12;
+			let al3 = count % store3;
+			store3 *= 1.1; 
+			const tema = '<span id="grid2">%money%</span>';
+			const tema2 = tema.replace('%money%', Math.round(store3) + '💲');
+			ss3.innerHTML = tema2;
 			put += Math.round(all);
 			count = 0;
+			count += al3;
+			CCC();
+			Cut();		
+		}
+		else if((count >= store4) && (count < store5)) {
+			all = count / store4 * 20;
+			let al4 = count % store4;
+			store4 *= 1.1; 
+			const tema = '<span id="grid2">%money%</span>';
+			const tema2 = tema.replace('%money%', Math.round(store4) + '💲');
+			ss4.innerHTML = tema2;
+			put += Math.round(all);
+			count = 0;
+			count += al4;
 			CCC();
 			Cut();	
 		}
-		else if((count >= 2000) && (count < 3000)) {
-			all = count / 100;
+		else if((count >= store5) && (count < store6)) {
+			all = count / store5 * 32;
+			let al5 = count % store5;
+			store5 *= 1.1; 
+			const tema = '<span id="grid2">%money%</span>';
+			const tema2 = tema.replace('%money%', Math.round(store5) + '💲');
+			ss5.innerHTML = tema2;
 			put += Math.round(all);
 			count = 0;
+			count += al5;
 			CCC();
-			Cut();	
+			Cut();
 		}
-		else if((count >= 3000) && (count < 5000)) {
-			all = count / 94;
+		else if(count > store6){
+			all = count / store6 * 55;
+			let al5 = count % store6;
+			store6 *= 1.1; 
+			const tema = '<span id="grid2">%money%</span>';
+			const tema2 = tema.replace('%money%', Math.round(store6) + '💲');
+			ss6.innerHTML = tema2;
 			put += Math.round(all);
 			count = 0;
+			count += al6;
 			CCC();
-			Cut();	
+			Cut()		
 		}
-		else if(count > 5000){
-			all = count / 90;
-			put += Math.round(all);
-			count = 0;
-			CCC();
-			Cut();				
-		}
-	setInterval(Interval, 1000);
 }	
 function stil1(){
 	if (count >= 100){
