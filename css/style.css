@@ -184,3 +184,21 @@ body, html{
 #shop7:hover{
 	border: 2px solid orange;
 }
+#grid1, #grid2, #grid3, #grid4, #grid5, #grid6{
+	border: 2px solid lightblue;
+	border-radius: 12px;
+	text-align: center;	
+	font-family: cursive;
+	background: lightblue;
+	padding: 2px;
+	margin-top: 5px;
+	color: white;
+	cursor: pointer;
+	text-shadow: 0 0 10px hotpink;
+}
+#grid{
+	background: lightblue;
+	padding: 5px;
+	border-radius: 12px;
+	margin-bottom: 5px;
+}
