@@ -265,7 +265,7 @@ function Shop7(){
 		}
 		else if(count > store6){
 			all = count / store6 * 55;
-			let al5 = count % store6;
+			let al6 = count % store6;
 			store6 *= 1.1; 
 			const tema = '<span id="grid2">%money%</span>';
 			const tema2 = tema.replace('%money%', Math.round(store6) + '💲');
