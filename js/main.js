@@ -217,7 +217,7 @@ function Shop7(){
 		ss1.innerHTML = tema2;
 		put += Math.round(all);
 		count = 0;
-		count += al1;
+		count += Math.round(al1);
 		CCC();
 		Cut();
 	}	
@@ -230,7 +230,7 @@ function Shop7(){
 			ss2.innerHTML = tema2;
 			put += Math.round(all);
 			count = 0;
-			count += al2;
+			count += Math.round(al2);
 			CCC();
 			Cut();	
 		}
@@ -243,7 +243,7 @@ function Shop7(){
 			ss3.innerHTML = tema2;
 			put += Math.round(all);
 			count = 0;
-			count += al3;
+			count += Math.round(al3);
 			CCC();
 			Cut();		
 		}
@@ -256,7 +256,7 @@ function Shop7(){
 			ss4.innerHTML = tema2;
 			put += Math.round(all);
 			count = 0;
-			count += al4;
+			count += Math.round(al4);
 			CCC();
 			Cut();	
 		}
@@ -269,7 +269,7 @@ function Shop7(){
 			ss5.innerHTML = tema2;
 			put += Math.round(all);
 			count = 0;
-			count += al5;
+			count += Math.round(al5);
 			CCC();
 			Cut();
 		}
@@ -282,7 +282,7 @@ function Shop7(){
 			ss6.innerHTML = tema2;
 			put += Math.round(all);
 			count = 0;
-			count += al6;
+			count += Math.round(al6);
 			CCC();
 			Cut()		
 		}
