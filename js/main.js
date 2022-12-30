@@ -202,7 +202,7 @@ function Shop6(){
 		put += 55;
 		const tema = '<span id="grid6">%money%</span>';
 		const tema2 = tema.replace('%money%', Math.round(store6) + '💲');
-		ss1.innerHTML = tema2;		
+		ss6.innerHTML = tema2;		
 		CCC();
 		Cut();
 	}
@@ -272,7 +272,7 @@ function Shop7(){
 			ss6.innerHTML = tema2;
 			put += Math.round(all);
 			count = 0;
-			count += Math.round(al6);		
+			count += Math.round(al6);	
 		}
 	CCC()
 	Cut()	
