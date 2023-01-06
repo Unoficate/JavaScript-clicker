@@ -43,14 +43,13 @@ body, html{
 	display: flex;
 	flex-direction: column;
 	border: 2px solid hotpink;
-	width: 500px;
 	box-shadow: 20px 17px 0px #2c5866;
 	align-items: center;
 	justify-content: center;
-	margin: 0 auto;
 	background: lightblue;
 	border-radius: 12px;
 	grid-area: modal;
+	cursor: pointer;
 }
 #shop1, #shop2, #shop3, #shop4, #shop5, #shop6, #pass1{
 	border: 2px solid pink;
@@ -97,7 +96,8 @@ body, html{
 	font-size: 50px;
 	color: white;
 	grid-area: bonus;
-	text-shadow: 0 0 10px lightblue;
+	text-shadow: -2px 1px 10px gold;
+
 }
 #bonus2{
 	font-family: cursive;
