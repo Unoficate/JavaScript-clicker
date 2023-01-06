@@ -10,6 +10,12 @@ let store3 = 1200;
 let store4 = 2000;
 let store5 = 3000;
 let store6 = 5000;
+let pre = 0;
+let pre1 = 0;
+let pre2 = 0;
+let pre3 = 0;
+let pre4 = 0;
+let pre5 = 0;
 point = 0;
 const ss1 = document.querySelector('#grid1');
 const ss2 = document.querySelector('#grid2');
@@ -47,13 +53,20 @@ function CCC(){
 			const template2 = template.replace('%score%', count + '💲');
 			score.innerHTML = template2;
 		}
-		else if (count >= 1000000){
+		else if ((count >= 1000000) && (count < 1000000000)){
 			count += point;
 			all3 = count / 1000000			
 			const template = '<div class="score" id="scoreBar">%score%</div>';
 			const template2 = template.replace('%score%', all3.toFixed(2) + 'kk💲');
 			score.innerHTML = template2;
 		}	
+		else if (count >= 1000000000){
+			count += point;
+			all3 = count / 1000000000			
+			const template = '<div class="score" id="scoreBar">%score%</div>';
+			const template2 = template.replace('%score%', all3.toFixed(2) + 'b💲');
+			score.innerHTML = template2;
+		}		
 }			
 setInterval(CCC, 1000);
 function Clicker1(){
@@ -63,6 +76,7 @@ function Clicker1(){
 		count++
 	}
 		else if ((count >= 100) && (count < 1000)){
+			pre++;
 			const tem = '<span id="achivka1">%achivka%</span>';
 			const tem2 = tem.replace('%achivka%', 'Достижение выполнено, нажмите что бы получить');
 			achivka1.innerHTML = tem2;
@@ -71,6 +85,7 @@ function Clicker1(){
 			Cut();
 		}
 		else if ((count >= 1000) && (count < 5000)){
+			pre1++;
 			const tem = '<span id="achivka2">%achivka%</span>';
 			const tem2 = tem.replace('%achivka%', 'Достижение выполнено, нажмите что бы получить');
 			achivka2.innerHTML = tem2;
@@ -79,6 +94,7 @@ function Clicker1(){
 			Cut();
 		}
 		else if ((count >= 5000) && (count < 10000)){
+			pre2++;
 			const tem = '<span id="achivka3">%achivka%</span>';
 			const tem2 = tem.replace('%achivka%', 'Достижение выполнено, нажмите что бы получить');
 			achivka3.innerHTML = tem2;
@@ -87,6 +103,7 @@ function Clicker1(){
 			Cut();
 		}
 		else if ((count >= 10000) && (count < 100000)){
+			pre3++;
 			const tem = '<span id="achivka4">%achivka%</span>';
 			const tem2 = tem.replace('%achivka%', 'Достижение выполнено, нажмите что бы получить');
 			achivka4.innerHTML = tem2;
@@ -95,6 +112,7 @@ function Clicker1(){
 			Cut();
 		}
 		else if ((count >= 100000) && (count < 1000000)){
+			pre4++;
 			const tem = '<span id="achivka5">%achivka%</span>';
 			const tem2 = tem.replace('%achivka%', 'Достижение выполнено, нажмите что бы получить');
 			achivka5.innerHTML = tem2;
@@ -103,6 +121,7 @@ function Clicker1(){
 			Cut();
 		}
 		else if (count >= 1000000){
+			pre5++;
 			const tem = '<span id="achivka5">%achivka%</span>';
 			const tem2 = tem.replace('%achivka%', 'Вы выполнили скрытое достижение, нажмите что бы получить');
 			achivka6.innerHTML = tem2;
@@ -278,7 +297,7 @@ function Shop7(){
 	Cut()	
 }	
 function stil1(){
-	if (count >= 100){
+	if (pre >= 1){
  		count += 200;
 		stil.innerHTML = '';
 		const tem = '<div id="colect">%apt%</div>';
@@ -288,7 +307,7 @@ function stil1(){
 	CCC();
 }
 function stil2(){
-	if (count >= 1000){
+	if (pre1 >= 1){
  		count += 2500;
 		stil11.innerHTML = '';
 		const tem = '<div id="colect">%apt%</div>';
@@ -298,7 +317,7 @@ function stil2(){
 	CCC();
 }
 function stil3(){
-	if (count >= 5000){
+	if (pre2 >= 1){
  		count += 10000;
 		stil12.innerHTML = '';
 		const tem = '<div id="colect">%apt%</div>';
@@ -308,7 +327,7 @@ function stil3(){
 	CCC();
 }
 function stil4(){
-	if (count >= 10000){
+	if (pre3 >= 1){
  		count += 20000;
 		stil13.innerHTML = '';
 		const tem = '<div id="colect">%apt%</div>';
@@ -318,7 +337,7 @@ function stil4(){
 	CCC();
 }
 function stil5(){
-	if (count >= 100000){
+	if (pre4 >= 1){
  		count += 0;
 		stil14.innerHTML = '';
 		const tem = '<div id="colect">%apt%</div>';
@@ -328,7 +347,7 @@ function stil5(){
 	CCC();
 }
 function stil6(){
-	if (count >= 1000000){
+	if (pre5 >= 1){
  		count += 0;
  		stil15.innerHTML = '';
 		const tem = '<div id="colect">%apt%</div>';
