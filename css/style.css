@@ -4,11 +4,17 @@
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+	overflow: hidden;
 }
-body, html{
-	background: pink;
+body, html{	
+	background: linear-gradient(132deg, pink, purple, yellow, blue);
+  	background-size: 400% 400%;
+  	animation: Gradient 15s ease infinite;
+  	position: relative;
+  	cursor: url('cursor.png'), pointer;
 }
 .btn{
+	z-index: 1; 
 	border: 2px solid hotpink;
 	border-radius: 12px;
 	text-align: center;	
@@ -29,7 +35,6 @@ body, html{
 .wrapper{
 	text-align: center;
 	padding: 20px;
-	background: pink;
 	display: grid;
 	grid-gap: 30px;
 	grid-template-columns: 2fr 1fr 1fr;
@@ -38,18 +43,23 @@ body, html{
 	'bonus2 bonus2 stili' 
 	'modal magaz stili'
 	'modal magaz2 stili';
+	width: 95%;
+    height:95vh;
+    margin: 0 auto;
 }
 .modal{
+	z-index: 1; 
 	display: flex;
 	flex-direction: column;
-	border: 2px solid hotpink;
-	box-shadow: 20px 17px 0px #2c5866;
+	border: 2px solid #aff0ba;
 	align-items: center;
-	justify-content: center;
-	background: lightblue;
+/*	justify-content: center;*/
+	background: url("img/dollar.png") no-repeat center/ calc(100% - 50%);
+	background-color: #aff0ba;
 	border-radius: 12px;
 	grid-area: modal;
 	cursor: pointer;
+	opacity: 0.9;
 }
 #shop1, #shop2, #shop3, #shop4, #shop5, #shop6, #pass1{
 	border: 2px solid pink;
@@ -61,6 +71,7 @@ body, html{
 	color: white;
 	cursor: pointer;
 	text-shadow: 0 0 10px hotpink;
+	z-index: 1;
 }
 .magaz{
 	padding: 5px;
@@ -70,10 +81,9 @@ body, html{
 	flex-direction: column;
 	float: right;
 	grid-area: magaz;
-	border: 2px solid lightblue;
+	border: 2px solid hotpink;
 	background: hotpink;
 	border-radius: 12px;
-	box-shadow: 20px 17px 0px #b05562;
 }
 .magaz2{
 	padding: 5px;
@@ -83,10 +93,9 @@ body, html{
 	flex-direction: column;
 	float: right;
 	grid-area: magaz2;
-	border: 2px solid lightblue;
+	border: 2px solid hotpink;
 	background: hotpink;
 	border-radius: 12px;
-	box-shadow: 20px 17px 0px #b05562;
 }
 #shop1:hover, #shop2:hover, #shop3:hover, #shop4:hover, #shop5:hover, #shop6:hover, #pass1:hover{
 	border: 2px solid gold;
@@ -96,8 +105,7 @@ body, html{
 	font-size: 50px;
 	color: white;
 	grid-area: bonus;
-	text-shadow: -2px 1px 10px gold;
-
+	text-shadow: -2px 1px 10px gold; 
 }
 #bonus2{
 	font-family: cursive;
@@ -126,10 +134,9 @@ body, html{
 	flex-direction: column;
 	float: right;
 	grid-area: magaz;
-	border: 2px solid lightblue;
+	border: 2px solid hotpink;
 	background: hotpink;
 	border-radius: 12px;
-	box-shadow: 20px 17px 0px #b05562;
 	grid-area: stili;
 }
 .stil1, .stil2, .stil3, .stil4, .stil5, .stil6{
@@ -142,6 +149,7 @@ body, html{
 	color: white;
 	cursor: pointer;
 	text-shadow: 0 0 10px hotpink;	
+	z-index: 1;
 }
 .stil1:hover, .stil2:hover, .stil3:hover, .stil4:hover, .stil5:hover, .stil6:hover{
 	background: orange;
@@ -160,7 +168,7 @@ body, html{
 	font-family: cursive;
 	margin-bottom: 2px;
 	color: white;
-	text-shadow: 0 0 20px gold;
+	text-shadow: 0 0 20px gold; 
 }
 #colect, #colect2, #colect3, #colect4, #colect5, #colect6 {
 	text-align: left;
@@ -169,6 +177,7 @@ body, html{
 	text-shadow: 0 0 20px orange;
 	font-size: 15px;
 	font-family: cursive;
+	z-index: 1;
 }
 #shop7{
 	border: 2px solid gold;
@@ -180,6 +189,7 @@ body, html{
 	color: white;
 	cursor: pointer;
 	text-shadow: 0 0 10px hotpink;
+	z-index: 1;
 }
 #pass2{
 	border: 2px solid gold;
@@ -191,6 +201,7 @@ body, html{
 	color: white;
 	cursor: pointer;
 	text-shadow: 0 0 10px hotpink;
+	z-index: 1;
 }
 #shop7:hover{
 	border: 2px solid orange;
@@ -212,4 +223,139 @@ body, html{
 	padding: 5px;
 	border-radius: 12px;
 	margin-bottom: 5px;
+	z-index: 1;
+}
+.modal:focus:active{
+	background-size: calc(100% - 30%);
+	background-position-y: top;
+	transition: all 1s;
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: url("img/dlr.png") no-repeat center center / 90%;
+    animation: animate 15s linear infinite;
+    bottom: -150px;
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        border-radius: 50%;
+    }
+
+}
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
