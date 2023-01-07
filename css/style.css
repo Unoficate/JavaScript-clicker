@@ -4,7 +4,6 @@
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	overflow: hidden;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body, html{	
@@ -451,5 +450,6 @@ body, html{
 		'bonus2 bonus2 stili' 
 		'modal modal stili'
 		'magaz2 magaz stili';
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 }
