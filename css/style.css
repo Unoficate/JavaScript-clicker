@@ -7,7 +7,7 @@
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body, html{	
-	background: linear-gradient(132deg, pink, purple, yellow, blue);
+	background: linear-gradient(132deg, pink, purple, yellow, blue) no-repeat;
   	background-size: 400% 400%;
   	animation: Gradient 15s ease infinite;
   	position: relative;
