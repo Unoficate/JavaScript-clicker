@@ -237,10 +237,10 @@ body, html{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
     height: 100%;
     overflow: hidden;
     z-index: 0;
+	width: -webkit-fill-available;
 }
 
 .circles li{
@@ -249,7 +249,7 @@ body, html{
     list-style: none;
     width: 20px;
     height: 20px;
-    background: url("img/dlr.png") no-repeat center center / 90%;
+    background: url("img/dlr2.png") no-repeat center center / 90%;
     animation: animate 15s linear infinite;
     bottom: -150px;
 }
