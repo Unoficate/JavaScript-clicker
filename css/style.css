@@ -7,7 +7,7 @@
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body, html{	
-	background: linear-gradient(132deg, pink, purple, yellow, blue) no-repeat;
+	background: linear-gradient(132deg, pink, purple, yellow) no-repeat;
   	background-size: 400% 400%;
   	animation: Gradient 15s ease infinite;
   	position: relative;
@@ -91,7 +91,6 @@ body, html{
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	float: right;
 	grid-area: magaz2;
 	border: 2px solid hotpink;
 	background: hotpink;
@@ -409,7 +408,7 @@ body, html{
 		font-size: 5px;
 	}
 	#title{
-		font-size: 5px;
+		font-size: 8px;
 	}
 	#grid{
 		padding: 3px;
@@ -425,7 +424,7 @@ body, html{
 		height: 260px;
 	}
 	#title1{
-		font-size: 5px;
+		font-size: 12px;
 	}
 	.stil1, .stil2, .stil3, .stil4, .stil5, .stil6{
 		font-size: 6px;
@@ -446,8 +445,8 @@ body, html{
 	}
 	.wrapper{
 	grid-template-areas: 
-		'bonus bonus stili'
-		'bonus2 bonus2 stili' 
+		'bonus bonus bonus'
+		'bonus2 bonus2 bonus2' 
 		'modal modal stili'
 		'magaz2 magaz stili';
 		grid-template-columns: 1fr 1fr 1fr;
