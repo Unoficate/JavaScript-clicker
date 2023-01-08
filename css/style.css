@@ -396,7 +396,6 @@ body, html{
 		width: 30px;
 		height: 30px;
 	}
-
 }
 
 /* Extra Small Devices, Phones */
@@ -450,5 +449,10 @@ body, html{
 		'modal modal stili'
 		'magaz2 magaz stili';
 		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 10px;
+		padding: 5px;
+	}
+	.circles{
+		width: -webkit-fill-available;
 	}
 }
